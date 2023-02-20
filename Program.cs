@@ -9,7 +9,7 @@
 
 Console.Clear();
 
-double ResaltX(int b1, int k1, int b2, int k2)
+double ResaltX(double b1, double k1, double b2, double k2)
 {
     // double x = (b2 - b1) / (k1 - k2)
     double x1 = b2 - b1;
@@ -18,20 +18,20 @@ double ResaltX(int b1, int k1, int b2, int k2)
     return x;
 } 
 
-double ResaltY(int b1, int k1, double x)
+double ResaltY(double b1, double k1, double x)
 {
     double y = (k1 * x) + b1;
     return y;
 } 
 
 Console.Write ("Введите значение b1: ");
-int b1 = int.Parse(Console.ReadLine()!);
+double b1 = double.Parse(Console.ReadLine()!);
 Console.Write ("Введите значение k1: ");
-int k1 = int.Parse(Console.ReadLine()!);
+double k1 = double.Parse(Console.ReadLine()!);
 Console.Write ("Введите значение b2: ");
-int b2 = int.Parse(Console.ReadLine()!);
+double b2 = double.Parse(Console.ReadLine()!);
 Console.Write ("Введите значение k2: ");
-int k2 = int.Parse(Console.ReadLine()!);
+double k2 = double.Parse(Console.ReadLine()!);
 
 double x = ResaltX (b1, k1, b2, k2);
 double y = ResaltY(k1, b1, x);
